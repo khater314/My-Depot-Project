@@ -1,0 +1,12 @@
+.container {
+    padding-inline: 7em;
+}
+@media (max-width:1024px) {
+    .container {
+        padding-inline: 2em;
+    }
+    @media (max-width:460px) {
+    .container {
+        padding-inline: 1.5em;
+    }
+}
