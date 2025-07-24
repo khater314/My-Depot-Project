@@ -1,9 +1,11 @@
 .navbar {
     padding-block: 2em;
     font-size: 0.8em;
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
-    
+    background-color: var(--white-color);
+    z-index: 1000;
 }
 nav .container {
     display: flex;
