@@ -9,3 +9,21 @@
 
 @import url(product_details.css);
 @import url(shop.css);
+@import url(cart.css);
+
+.toTop {
+    width: 2.5em;
+    height: 2.5em;
+    position: fixed;
+    right: 1.5em;
+    bottom: 5em;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+.toTop i {
+    color: white;
+}
