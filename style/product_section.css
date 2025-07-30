@@ -14,12 +14,18 @@
     position: relative;
     font-size: 1.1em;
 }
+.product_section_nav .nav_links {
+    flex-shrink: 0;
+}
 .product_section_nav .nav_links li a {
     opacity: 0.5;
 }
 .product_section_nav .nav_links li .active {
     color: var(--main-color);
     opacity: 1;
+}
+.product_section_nav_filter {
+    flex-shrink: 0;
 }
 .product_section_nav_filter:hover .product_section_nav_filter_other_links {
     visibility: visible;
@@ -60,7 +66,10 @@
 /* Product Section Navbar Media Query */
 @media (max-width:1024px) {
     .product_section_nav {
-        overflow-x: scroll;
+        overflow-x: auto;
+    }
+    .product_section_nav::-webkit-scrollbar {
+        display: none;
     }
     .product_section_nav .nav_links {
         display: block;
