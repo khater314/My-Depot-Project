@@ -60,9 +60,12 @@
 /* Product Section Navbar Media Query */
 @media (max-width:1024px) {
     .product_section_nav {
-        overflow: scroll;
+        overflow-x: scroll;
     }
     .product_section_nav .nav_links {
         display: block;
+    }
+    .product_section_nav_filter {
+        display: none;
     }
 }
