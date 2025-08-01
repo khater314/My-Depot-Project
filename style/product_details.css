@@ -150,11 +150,13 @@
     gap: 0px;
     outline: 1px solid var(--border-color);
     width: fit-content;
+    overflow-x: auto;
 }
 .single_product_description_btns button {
     text-transform: capitalize;
     font-weight: 500;
     padding-inline: 2em;
+    flex-shrink: 0;
 }
 .single_product_description_btns button:not(:last-child) {
     border-right: 1px solid var(--border-color);
@@ -206,5 +208,11 @@
 @media (max-width:1024px) {
     .single_product_details {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width:700px) {
+    .single_product_description_btns {
+        width: 100%;
+        overflow-x: auto;
     }
 }

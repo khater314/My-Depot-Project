@@ -68,9 +68,6 @@
     .product_section_nav {
         overflow-x: auto;
     }
-    .product_section_nav::-webkit-scrollbar {
-        display: none;
-    }
     .product_section_nav .nav_links {
         display: block;
     }
